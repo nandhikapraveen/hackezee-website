@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form Example</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result-message"></div>
+
+    <script>
+        // JavaScript for handling the form submission
+        const form = document.getElementById('contact-form');
+        const resultMessage = document.getElementById('result-message');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+
+            const name = nameInput.value;
+            const email = emailInput.value;
+
+            if (name && email) {
+                resultMessage.textContent = `Thank you, ${name}! We'll get in touch at ${email}.`;
+            } else {
+                resultMessage.textContent = 'Please fill in all fields.';
+            }
+        });
+    </script>
+</body>
+</html>
+
