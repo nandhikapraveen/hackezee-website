@@ -1,4 +1,6 @@
 # hackezee-website
+the index.html fils is just for a simple website that takes in name and email and adds it to a database. but to connect the db we have issues lol.
+
 Install Node.js and npm or whatever tf that is 
 
 so basically run index.html after saving everything else.
