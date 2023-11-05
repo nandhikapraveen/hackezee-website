@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // TODO: Add validation and security checks
 
     // Establish a database connection using MySQLi
-    $conn = mysqli_connect('localhost', 'username', 'password', 'supermarket');
+    $conn = mysqli_connect('localhost', 'root', '', 'supermarket');
 
     // Check the connection
     if (!$conn) {

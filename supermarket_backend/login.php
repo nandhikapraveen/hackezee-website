@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // TODO: Add validation and security checks
 
     // Create a database connection (You should provide your database credentials)
-    $conn = mysqli_connect("localhost", "username", "password", "supermarket");
+    $conn = mysqli_connect("localhost", "root", "", "supermarket");
 
     // Check the connection
     if (!$conn) {
