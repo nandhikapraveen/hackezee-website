@@ -1,17 +1,1 @@
-# hackezee-website
-the index.html fils is just for a simple website that takes in name and email and adds it to a database. but to connect the db we have issues lol.
-
-Install Node.js and npm or whatever tf that is 
-
-so basically run index.html after saving everything else.
-
-the script.js uses my mongoDB account but if you feel like things need to be changed, put your account and password instead.
-
-the "mongodb://your_database_uri" in server.js has to be replaced (obviously lol) ----> THIS IS THE ISSUE SO FIND A WAY.
-idek wtf a URI is.
-
-paste the mongoDB bin path to the cmd.
-
-put "mongod" (some 100 lines should come).
-
-then put mongo (it says it doesn't identify or whatever) that's the main command to connect mongoDB to the shell.
+created a low-end supermarket interface to emulate the integration of a smart basket and website using CSS, HTML, php , Javascript.
